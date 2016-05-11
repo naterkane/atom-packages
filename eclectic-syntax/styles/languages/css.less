@@ -1,0 +1,45 @@
+.source.css {
+  &.less,
+  &.sass,
+  &.scss {
+    .variable {
+      color: @accent-3;
+    }
+  }
+  .at-rule {
+    color: @accent-3-alt;
+    .punctuation.definition.keyword {
+      color: @accent-3;
+    }
+    .punctuation.terminator {
+      color: @foreground;
+    }
+  }
+  .entity.other.attribute-name {
+    color: @accent-1;
+  }
+  .punctuation.definition {
+    &.entity {
+      color: @foreground-alt;
+    }
+  }
+  .constant {
+    &.other.color,
+    &.other.rgb-value {
+      color: @accent-3;
+      &.scss {
+        .punctuation.definition {
+          color: @accent-3-alt;
+        }
+      }
+    }
+  }
+  &.scss {
+    .punctuation {
+      color: @syntax-text-color;
+    }
+    .entity.tag {
+      color: @string;
+    }
+  }
+}

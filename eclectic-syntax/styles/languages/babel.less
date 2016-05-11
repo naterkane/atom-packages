@@ -1,0 +1,42 @@
+.meta {
+  &.function,
+  .function.arrow {
+    .variable.other.readwrite {
+      color: @accent-3-alt;
+    }
+  }
+  &.function-call {
+    .entity.name.function,
+    .punctuation.definition.parameters {
+      color: @foreground;
+    }
+  }
+  &.embedded.expression {
+    .punctuation.embedded,
+    .variable {
+      color: @foreground-alt;
+    }
+    .keyword.operator.ternary {
+      color: @accent-3-alt;
+    }
+  }
+}
+
+.support.object.node {
+  color: @accent-1;
+}
+
+.object.key .string.unquoted {
+  color: @foreground-alt;
+}
+
+.entity.quasi.element {
+  .variable,
+  .punctuation {
+    color: @string-alt;
+  }
+}
+
+.keyword.control.module {
+  color: @accent-1;
+}
